@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AshleshaGK Portfolio</title>
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- AOS Library for Animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Ashlesha GK</span>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="10  00" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300"><a href="#projects">Projects</a></div>
+            </div>
+
+            <!-- Mobile Menu Icon -->
+            <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+        </div>
+
+        <!-- Dropdown Menu (Mobile) -->
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <i class="fa-solid fa-xmark cancel" onclick="toggleMenu()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="main-container">
+            <!-- Profile Image -->
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="AGK.png" alt="Ashlesha GK">
+            </div>
+
+            <!-- Introduction Content -->
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="700" data-aos-delay="500">
+                    Hey, I'm <span>Ashlesha GK</span>
+                </h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="700" data-aos-delay="600">
+                    I'm a <span class="typewriter-text"></span><label for="">|</label>
+                </div>
+                <p data-aos="flip-up" data-aos-duration="700" data-aos-delay="700">
+                    Embarking on the academic journey with zeal and dedication, I'm ready to dive into the realm of knowledge headfirst. Let's start this educational adventure together, eager to learn, grow, and succeed every step of the way. Furthermore, I am dedicated to assuming responsibility for cultivating my skills, striving to become an invaluable asset to any organization, and consistently delivering high-quality contributions to propel our collective success.
+                </p>
+
+                <!-- Social Media Links -->
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://github.com/ashlesha-gk"><i class="fa-brands fa-github" target="_blank"></i></a>
+                    <a href="https://www.linkedin.com/in/ashlesha-gk-bab37b229/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+                <!-- Download CV Button -->
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <button onclick="downloadCV()">Download CV</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+            <div class="about-text">
+                <p>
+                    Hi, I'm Ashlesha GK, a student at Sahyadri College of Engineering and Management, 
+                    pursuing an undergraduate degree in Computer Science. I am a continuous learner 
+                    with a passion for exploring new technologies, especially in cybersecurity, 
+                    blockchain, and web development.
+                </p>
+                <p>
+                    Currently, I am working on a decentralized crowdfunding platform utilizing 
+                    Ethereum smart contracts for transparent fund management. I have hands-on 
+                    experience in vulnerability assessment and penetration testing, leveraging 
+                    tools like Kali Linux and Metasploit.
+                </p>
+                <p>
+                    Additionally, I enjoy contributing to real-world projects, applying my technical 
+                    skills to solve complex problems. I am always eager to learn, adapt, and take on 
+                    new challenges in software engineering and cybersecurity.
+                </p>
+            </div>
+    </section>
+
+    <!-- Projects Section -->
+<section id="projects">
+    <h1>My Projects</h1>
+    <div class="projects-container">
+        <div class="project-card">
+            <img src="ethertrust.png" alt="Project 1">
+            <h3>EtherTrust: Blockchain-Based Crowdfunding Platform</h3>
+            <p>My team and I built a decentralized crowdfunding platform with Ethereum smart contracts, milestone-based funding, real-time tracking, and automated rewards. It uses Web3.js, Node.js, Express, MySQL, WebSocket, and MetaMask integration.</p>
+            <a href="https://github.com/ashlesha-gk/Blockchain-Based-Crowdfunding-Platform.git" target="_blank" class="project-link">View More</a>
+        </div>
+        <div class="project-card">
+            <img src="happypaws.png" alt="Project 2">
+            <h3>Happy PAWS: Comprehensive Dog Marketplace</h3>
+            <p>My team and I developed a pet website for buying and selling dogs with user authentication, an admin dashboard, and image uploads. Built with HTML, CSS, JavaScript, Node.js, and MySQL.</p>
+            <a href="https://github.com/ashlesha-gk/Happy-PAWS.git" target="_blank" class="project-link">View More</a>
+        </div>
+        <div class="project-card">
+            <img src="dbms.png" alt="Project 3">
+            <h3>Home-Interior-Design-Management-System</h3>
+            <p>I built a DBMS-based mini-project developed using Apache NetBeans and Java. This system is designed to manage and streamline the various aspects of a home interior design business. It includes functionalities for managing clients, designers, inventory, projects, and suppliers. The backend is powered by MySQL, and the system uses JDBC for database connectivity.</p>
+            <a href="https://github.com/ashlesha-gk/Home-Interior-Design-Management-System.git" target="_blank" class="project-link">View More</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+    // Menu Toggle Function
+    function toggleMenu() {
+        const dropdown = document.querySelector(".dropdown");
+        dropdown.classList.toggle("active");
+    }
+
+    document.querySelectorAll(".dropdown .links a").forEach(link => {
+    link.addEventListener("click", () => {
+        document.querySelector(".dropdown").classList.remove("active"); // Close the dropdown
+        });
+    });
+
+    const texts = [
+        "DEVELOPER",
+        "DESIGNER",
+        "CYBERSECURITY ENTHUSIAST",
+    ]
+    const speed = 100;
+    const textElements = document.querySelector(".typewriter-text")
+
+    let textIndex = 0;
+    let characterIndex = 0;
+
+    function typeWriter(){
+        if(characterIndex<texts[textIndex].length){
+            textElements.innerHTML += texts[textIndex].charAt(characterIndex)
+            characterIndex++
+            setTimeout(typeWriter, speed);
+        }
+        else{
+            setTimeout(eraseText, 100)
+        }
+    }
+
+    function eraseText(){
+        if(textElements.innerHTML.length>0){
+            textElements.innerHTML=textElements.innerHTML.slice(0,-1);
+            setTimeout(eraseText,50);
+        }
+        else{
+            textIndex = (textIndex + 1)%texts.length;
+            characterIndex=0;
+            setTimeout(typeWriter,500)
+        }
+    }
+    window.onload=typeWriter
+
+    function downloadCV() {
+    window.open('https://drive.google.com/uc?export=download&id=1u2msRrVzVcJsRzY-P-GVymnluUjduteg', '_blank');
+    }
+
+    document.querySelectorAll('.links a').forEach(anchor => {
+    anchor.addEventListener('click', function(event) {
+        event.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop - 60, // Adjust based on navbar height
+                behavior: "smooth"
+            });
+        }
+    });
+});
+
+    </script>
+
+</body>
+</html>
+
+
